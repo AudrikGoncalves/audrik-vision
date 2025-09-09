@@ -141,11 +141,14 @@ const ExcelSection = () => {
                   onChange={handleFileUpload}
                   className="hidden"
                   id="excel-upload"
+                  multiple
                 />
                 <label htmlFor="excel-upload">
-                  <Button variant="outline" className="cursor-pointer">
-                    <Upload className="w-4 h-4 mr-2" />
-                    Selecionar Arquivo
+                  <Button variant="outline" className="cursor-pointer" asChild>
+                    <div>
+                      <Upload className="w-4 h-4 mr-2" />
+                      Selecionar Arquivo Excel
+                    </div>
                   </Button>
                 </label>
               </div>
